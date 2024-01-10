@@ -1,0 +1,13 @@
+﻿package: libsasl2-modules-gssapi-mit
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libgssapi-krb5-2_libs
+      - libsasl2-modules_libs
+      - libssl3_libs
+    contents:
+      /usr/lib/*-linux-*/sasl2/libgs2.so*:
+      /usr/lib/*-linux-*/sasl2/libgssapiv2.so*:
+      /usr/lib/*-linux-*/sasl2/libscram.so*:
